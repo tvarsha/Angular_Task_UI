@@ -1,0 +1,225 @@
+
+<div class="box">
+    <a class="button" href="#popup1">Table1</a>
+    <a class="button" href="#popup2">List1</a>
+    <a class="button" href="#popup3">List2</a>
+    <a class="button" href="#popup4">Table2</a>
+    
+    
+</div>
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+
+
+        <!-- <div class="content"> -->
+        <!-- <div class="main1"> -->
+
+        <div class="tabledata">
+            <div class="content">
+                <div class="tableheader">
+                    <a class="close" href="#">&times;</a>
+                    <h2 class="tabletitle">Table Header</h2>
+                </div>
+                <div class="tablebody">
+                    <table id="customers">
+                        
+                        <tr>
+
+                            <th><input type="checkbox"></th>
+                            <th>Type</th>
+                            <th>Flight</th>
+                            <th>Transaction</th>
+                            <th>Partner</th>
+                            <th>Activity<span class="down">&#8595;</span></th>
+                            <th>Miles</th>
+                        </tr>
+                        <tr *ngFor="let data of tableDataFixed; let i=index">
+                            <td ><input type="checkbox"></td>
+                            <td>{{data.Type}}</td>
+                            <td>{{data.Flight}}</td>
+                            <td>{{data.Transaction}}</td>
+                            <td>{{data.Partner}}</td>
+                            <td>{{data.Activity}}</td>
+                            <td>{{data.Miles}}</td>
+                        </tr>
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+</div>
+
+<div id="popup2" class="overlay">
+    <div class="popup">
+
+
+        <div>
+            <div class="main1">
+
+                <div class="tabledata">
+                    <div class="content">
+                        <div class="tableheader">
+                            <a class="close" href="#">&times;</a>
+                            <h2 class="tabletitle">Commodity Code</h2>
+                        </div>
+                        <div class="tablebody">
+                            <div class="searchInput">
+                                <input type="text" [(ngModel)]="queryString" id="search" placeholder="Search to type" />
+                                <span class="searchIcon"><i class="fa fa-search"></i></span>
+                            </div>
+                            <table id="customers">
+                                <tr *ngFor="let list of listData1 |search:queryString">
+                                    <td>{{list.userId}}</td>
+                                    <td>{{list.id}}</td>
+                                    <td>{{list.title}}</td>
+                                    <td>{{list.completed}}</td>
+                                </tr>
+
+                            </table>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <p><input type="checkbox"> Use the Same Code Description</p>
+
+            </div>
+            <!-- <div class="buttongroup">
+                    <button class="bgbutton">Cancel</button><button class="bgbutton1">Apply</button>
+                    
+                   </div>  -->
+            <div class="buttonGroup">
+                <button class="canbutton">Cancel</button>
+                <button class="appbutton">Apply</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="popup3" class="overlay">
+    <div class="popup">
+          <div>
+            <div class="main1">
+
+                <div class="tabledata">
+                    <div class="content">
+                        <div class="tableheader">
+                            <a class="close" href="#">&times;</a>
+                            <h2 class="tabletitle">SHC</h2>
+                        </div>
+                        <div class="tablebody">
+                            <div class="searchInput">
+                                <input type="text" [(ngModel)]="queryString" id="search" placeholder="Search to type" />
+                                <span class="searchIcon"><i class="fa fa-search"></i></span>
+                            </div>
+                            <table id="customers">
+                                <tr *ngFor="let list of listData1 |search:queryString">
+                                    <td>{{list.userId}}</td>
+                                    <td>{{list.id}}</td>
+                                    <td>{{list.title}}</td>
+                                    <td>{{list.completed}}</td>
+                                </tr>
+
+                            </table>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <!-- <div class="buttongroup">
+                    <button class="bgbutton">Cancel</button><button class="bgbutton1">Apply</button>
+                    
+                   </div>  -->
+            <div class="buttonGroup1">
+                <button class="canbutton">Cancel</button>
+                <button class="appbutton">Apply</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- table2 -->
+  <div id="popup4" class="overlay"> 
+    <div class="popup">
+        <div class="main table12">
+            <table id="customers" >
+            
+              <th> <input type="checkbox"></th>
+                <th><a href="#" class="sort-by">Text</a></th>
+                <th><a href="#" class="sort-by">Number</a></th>
+                <th><a href="#" class="sort-by">Inputs</a></th>
+                <th><a href="#" class="sort-by">Checkbox</a></th>
+                <th><a href="#" class="sort-by">Radio</a><a class="close1" href="#">&times;</a></th>
+           
+              <tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr>
+               <tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr><tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr><tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr><tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr><tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr><tr>
+               <td><input type="checkbox"></td>
+                <td>Text</td>
+                <td>124578963</td>
+                <td><input type="text" placeholder="Entering a value"></td>
+                <td class="text-center"><input type="checkbox"></td>
+                <td class="text-center"><input type="radio"></td>
+              </tr>
+              
+            </table>
+        </div>
+
+        </div>
+        </div> 

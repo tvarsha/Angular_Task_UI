@@ -1,0 +1,549 @@
+// body {
+//     font-family: Arial, sans-serif;
+//     background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+//     background-size: cover;
+//     height: 100vh;
+//   }
+  
+//   h1 {
+//     text-align: center;
+//     font-family: Tahoma, Arial, sans-serif;
+//     color: #06D85F;
+//     margin: 80px 0;
+//   }
+  
+//   .box {
+//     width: 80%;
+//     margin: 0 auto;
+//     background: rgba(255,255,255,0.2);
+//     padding: 35px;
+//     border: 2px solid #fff;
+//     border-radius: 20px/50px;
+//     background-clip: padding-box;
+//     text-align: center;
+//   }
+  
+//   .button {
+//     font-size: 1em;
+//     padding: 10px;
+//     color: #fff;
+//     border: 2px solid #06D85F;
+//     border-radius: 20px/50px;
+//     text-decoration: none;
+//     cursor: pointer;
+//     transition: all 0.3s ease-out;
+//   }
+//   // .button:hover {
+//   //   background: #06D85F;
+//   // }
+  
+//   .overlay {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background: rgba(0, 0, 0, 0.7);
+//     transition: opacity 500ms;
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+//   .overlay:target {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+  
+//   .Table {
+//     margin: 70px auto;
+//     padding: 20px;
+//     background: #fff;
+//     border-radius: 5px;
+//     position: relative;
+//     transition: all 5s ease-in-out;
+    
+//         margin-left: auto;
+//     width: 1080px;
+// 	margin-right: auto;
+//   }
+  
+//   .Table h2 {
+//     margin-top: 0;
+//     color: #333;
+//     font-family: Tahoma, Arial, sans-serif;
+//   }
+//   .Table .close {
+//     position: absolute;
+//     top: 20px;
+//     right: 30px;
+//     transition: all 200ms;
+//     font-size: 30px;
+//     font-weight: bold;
+//     text-decoration: none;
+//     color: #333;
+//   }
+//   .Table .close:hover {
+//     color: #06D85F;
+//   }
+//   .Table .content {
+//     max-height: 30%;
+//     overflow: auto;
+//   }
+  
+//   .theadClass{
+//     background-color: #001173;
+//     color:white;
+//     margin:30px;
+//     padding: 50px;
+//     }
+//   @media screen and (max-width: 700px){
+//     .box{
+//       width: 70%;
+//     }
+//     .Table{
+//       width: 70%;
+//     }
+//   }
+//   .tbodyClass{
+//       padding:80px;
+//   }
+//   table, td, th {  
+//     border: 1px solid #ddd;
+//     text-align: left;
+//   }
+  
+//   table {
+//     border-collapse: collapse;
+//     width: 100%;
+//   }
+  
+//   th, td {
+//     padding: 15px;
+//   }
+ 
+//   // .tabledata {
+//   //   position: relative;
+//   //           margin-left: auto;
+//   //       width: 1080px;
+//   //     margin-right: auto;
+//   //   }
+//   .tableheader {
+//     padding: 5px;
+//     background: #bdc3c9;
+// }
+// 	.tableheader:before{
+// 	display: table;
+//     content: " ";
+// 	}
+// 	.close {
+//     padding-top: 12px;
+//     float: right;
+//     font-size: 30px;
+//     font-weight: 200;
+//     line-height: 1;
+//     color: #fff;
+//     border: unset;
+//     background: transparent;
+//     text-shadow: 0 1px 0 #fff;
+//     filter: alpha(opacity=20);
+
+// }
+// .Table .tableheader {
+//     padding: 2px 0px 1px 10px;
+//     background: #bdc3c9;
+//     height: 50px;
+// }
+// .Table .tabletitle {
+// color: #142a7a;
+//   }
+// .Table tr {
+//   border: 1px solid #d4d4d4;
+// }
+body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  border-radius: 33px !important;
+    font-size: 1.5rem;
+    background-color: #001172;
+    padding: 10px 30px;
+    color: #fff;
+    border: 2px solid #001172;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    float: left;
+    margin-left: 10px;
+}
+  
+
+.button:hover {
+  background: #001172;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px 0px 0px 96px;
+  //padding: 20px;
+  // background: #fff;
+  border-radius: 5px;
+  width: 65%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  padding-top:11px;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: whitesmoke;
+}
+.popup .close1 {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close1:hover {
+  color: whitesmoke;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.text-center{
+ text-align:center;
+}
+.text-right{
+ text-align:right;
+}
+
+#customers td, #customers th {
+ /* border: 1px solid #ddd;*/
+  padding: 15px;
+ 
+}
+
+
+/*#customers tr:hover {background-color: #f0f0f0;}*/
+
+#customers th {
+    font-weight: 200 !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+color: #142a7a;
+}
+
+
+.tabledata {
+position: relative;
+        margin-left: auto;
+    width: 1080px;
+	margin-right: auto;
+}
+
+.tabledata .content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+	-moz-box-shadow: 0 0 3px #ccc;
+-webkit-box-shadow: 0 0 3px #ccc;
+box-shadow: 0 0 3px #ccc;
+width:1046px;
+}
+.tableheader {
+    padding: 5px;
+    background: #bdc3c9;
+}
+	.tableheader:before{
+	display: table;
+    content: " ";
+	}
+	.close {
+    padding-top: 6px;
+    float: right;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1;
+    color: #fff;
+    border: unset;
+    background: transparent;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+
+}
+.tabledata .tableheader {
+    padding: 2px 0px 1px 10px;
+    background: #bdc3c9;
+    height: 50px;
+}
+.tabledata .tabletitle {
+color: #142a7a;
+  }
+.tabledata tr {
+  border: 1px solid #d4d4d4;
+}
+.tabledata1{
+width:400px;
+}
+.tabledata1 input[type="text"] {
+    width: 96%;
+    height: 30px;
+}
+
+// .tabledata1 button {
+//     margin-left: -34px;
+//     height: 35px;
+//     background: transparent;
+//     border: transparent;
+// }
+
+.tabledata1 tr,td {
+    border: 1px solid #e7e7e7;
+}
+
+.tabledata1 tr.bg-clr {
+    background: #01a3e0;
+    color: #fff;
+}
+.tabledata1 a.apply {
+    float: right;
+    background: #01a3e0;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabledata1 a.cancel {
+    margin-right: 35px;
+    background: #667380;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+.tabledata1 h2.tabletitle {
+    color: #142a7a;
+}
+.down {
+ 
+  position: relative;
+  left: 5px;
+ 
+  font-size: 19px;
+}
+.main1{
+  overflow-y:scroll;
+  width: 1096px;
+  height: 500px;
+  table-layout: fixed;
+  // display: contents;
+}
+.bg{
+  width: 1096px;
+  background: #01a3e0;
+  margin: 0px;
+   
+}
+.bg p{
+  color:#fff;
+  position: relative;
+  
+  font-size: 15px;
+  padding: 11px;
+  margin:-3px 0px 0px 0px;
+  font-style: italic;
+}
+.buttonGroup{
+  background-color: #fff;
+  width:1096px;
+  height: 49px;
+}
+.buttonGroup1{
+  background-color:lightgrey;
+  width:1096px;
+  height: 49px;
+}
+.appbutton{
+  margin: 11px 0px 0px 13px;
+    /* float: left; */
+    border: 1px solid;
+    padding: 6px;
+    width: 80px;
+    background: #01a3e0;
+    color: white;
+    position: relative;
+    left: 890px;
+}
+.canbutton{
+  margin: 11px 0px 0px 13px;
+  /* float: left; */
+  border: 1px solid;
+  padding: 6px;
+  width: 80px;
+  background: #404344;
+  color: white;
+  position: relative;
+  left: 870px;
+}
+.searchInput input[type="text"]{
+  width: 1029px;
+  margin: 10px 30px 10px 30px;
+  height: 20px;
+
+}
+.searchIcon{
+  position: relative;
+  left:1041px;
+  bottom: 32px;
+}
+
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.text-center{
+ text-align:center;
+}
+.text-right{
+ text-align:right;
+}
+
+#customers td, #customers th {
+ /* border: 1px solid #ddd;*/
+  padding: 15px;
+ 
+}
+
+#customers tr:nth-child(even){background-color: #fff;}
+#customers tr:nth-child(odd){background-color: #f0f0f0;}
+
+/*#customers tr:hover {background-color: #f0f0f0;}*/
+
+#customers th {
+    font-weight: 200 !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #001172;
+  color: white;
+}
+
+th a.sort-by { 
+text-decoration: none;
+color: #fff;
+	padding-right: 18px;
+	position: relative;
+}
+a.sort-by:before,
+a.sort-by:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 5px;
+	top: 50%;
+	position: absolute;
+	width: 0;
+}
+a.sort-by:before {
+	border-bottom-color: #fff;
+	margin-top: -9px;
+}
+a.sort-by:after {
+	border-top-color: #fff;
+	margin-top: 1px;
+}
+.main {
+    margin-left: auto;
+    width: 1090px;
+	margin-right: auto;
+  display: contents;
+}
+input[type="text"] {
+    border: 1px solid #bacae2;
+    padding: 10px;
+}
+ .table12 td:nth-child(3){
+  text-align: right;
+}
+#customers .checkbox{
+  text-align: center;
+}
